@@ -23,6 +23,8 @@ class ClientAdmin(admin.ModelAdmin):
         'age',
         'get_formatted_addresses'  
     )
+    
+    search_fields =('name',)
 
     def get_formatted_addresses(self, obj):
         

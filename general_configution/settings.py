@@ -44,8 +44,12 @@ INSTALLED_APPS = [
     # APPs
     'register',
     
-    
+    #Test
+    'register.tests',
+        
 ]
+
+TEST_RUNNER = 'django.test.runner.DiscoverRunner'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

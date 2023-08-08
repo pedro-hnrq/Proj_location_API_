@@ -32,27 +32,18 @@ class AddressSerializer(serializers.ModelSerializer):
         zip_code = validated_data.get('zip_code')
         address_info = get_address_info_by_cep(zip_code)
 
-        if address_info:
-            validated_data['street'] = address_info['logradouro']
-            validated_data['neighborhood'] = address_info['bairro']
-            validated_data['city'] = address_info['cidade']
-            validated_data['complement'] = address_info['complemento']
-            validated_data['state'] = address_info['uf']
+        if not address_info:
+            raise serializers.ValidationError("CEP não encontrado")
+
+        validated_data['street'] = address_info['logradouro']
+        validated_data['neighborhood'] = address_info['bairro']
+        validated_data['city'] = address_info['cidade']
+        validated_data['complement'] = address_info['complemento']
+        validated_data['state'] = address_info['uf']
 
         return super(AddressSerializer, self).create(validated_data)
 
-    def update(self, instance, validated_data):
-        zip_code = validated_data.get('zip_code')
-        address_info = get_address_info_by_cep(zip_code)
-
-        if address_info:
-            instance.street = address_info['street']
-            instance.neighborhood = address_info['neighborhood']
-            instance.city = address_info['city']            
-            instance.state = address_info['state']
-            instance.complement = address_info['complement']
-
-        return super(AddressSerializer, self).update(instance, validated_data)
+    
     
     
 class ClientSerializer(serializers.ModelSerializer):
