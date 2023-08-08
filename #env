@@ -1,0 +1,9 @@
+# SECURITY
+SECRET_KEY=django-insecure-zpz8@nwnvrxqvql=9ii6h!8h*(zxpkqux&3uut$0lg5374!g$-
+
+# Database mongoDB
+MONGODB_NAME=location
+MONGODB_USER=myuser
+MONGODB_PASSWORD=mypassword
+MONGODB_HOST=mongodb
+MONGODB_PORT=27017
