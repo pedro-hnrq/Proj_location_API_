@@ -2,6 +2,8 @@
 
 <h2 align="center">📷 Prévia <h2>
 
+![location](https://github.com/pedro-hnrq/Proj_location_API_/assets/74242717/cdddec8a-5d4e-4fe0-8300-54018632cfe0)
+
 
 <h3>🎯 Objetivo</h3>
 
@@ -95,7 +97,7 @@ execute os comandos abaixo para criar arquivo de variáveis de ambiente a partir
 ```bash
 cp env .env
 ```
-#### Execução de desenvolvimento sem docker
+#### Execução na máquina
 
 Na primeira vez é necessário executar esse comando para aplicar as migrações do banco de dados
 ```python
