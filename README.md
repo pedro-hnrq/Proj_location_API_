@@ -47,8 +47,8 @@
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 - Python (versão 3.10.X)
-- Docker (versão 23.0.X)
-- Docker Compose (versão 2.17.X)
+- Django (versão 4.1.X)
+- Django REST Framework (versão 3.14.X)
 - Mongo (versão 6.X.X)
 - GIT (versão 2.X.X)
 
@@ -136,34 +136,6 @@ Gera o Token
 >>> token = Token.objects.create(user=admin)
 >>> token.key
 ```
-
-
-#### Execução de produção com docker
-
-Na primeira fazemos a coleta dos arquivos estáticos da aplicação
-```python
-python manage.py collectstatic
-```
-
-Depois basta executar
-```bash
-docker-compose up -V -d
-```
-
-Agora você pode acessar [localhost](http://localhost) no seu navegador.
-
-Para acessar o painel administrativo basta criar um super usuário com o seguinte comando
-
-```bash
-docker compose exec app python manage.py createsuperuser
-```
-
-Para poder parar a aplicação no docker basta executar
-```bash
-docker compose down
-```
-
-
 #### Realizar Teste
 
 ```python
