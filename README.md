@@ -2,7 +2,9 @@
 
 <h2 align="center">📷 Prévia <h2>
 
-![location](https://github.com/pedro-hnrq/Proj_location_API_/assets/74242717/cdddec8a-5d4e-4fe0-8300-54018632cfe0)
+
+![location](https://github.com/pedro-hnrq/Proj_location_API_/assets/74242717/92c763b5-2f2d-45a8-a43c-9ac32f7bbaba)
+
 
 
 <h3>🎯 Objetivo</h3>
