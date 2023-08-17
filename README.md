@@ -91,7 +91,7 @@ Com o ambiente virtual ativo instale as dependências
 
 Com pip
 ```python
-pip install -r requirements.dev.txt
+pip install -r requirements.txt
 ```
 
 execute os comandos abaixo para criar arquivo de variáveis de ambiente a partir de exemplos. (Lembre-se de modificá-los)
