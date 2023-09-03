@@ -27,6 +27,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    
+    
     'djongo',
     
     'django.contrib.admin',
@@ -40,6 +42,7 @@ INSTALLED_APPS = [
     'django_filters',
     'rest_framework',
     'rest_framework.authtoken',
+    'drf_spectacular',
     
     # APPs
     'register',
@@ -149,6 +152,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Django REST Framework - DRF
 REST_FRAMEWORK = {
+    # YOUR SETTINGS
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
     #GUIA DE AUTENTICAÇÕES  (Session ou token)
     'DEFAULT_AUTHENTICATION_CLASSES':(
         'rest_framework.authentication.SessionAuthentication',
@@ -165,4 +170,11 @@ REST_FRAMEWORK = {
         'rest_framework.throttling.AnonRateThrottle',
         'rest_framework.throttling.UserRateThrottle',
     ),
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Location Project API',
+    'DESCRIPTION': 'O projeto de localização que desenvolvi utilizou o serviço VIACEP. A aplicação tem como principal objetivo permitir que os clientes registrem suas informações, incluindo nome e idade, juntamente com seus dados de endereço.',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,  
 }
