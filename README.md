@@ -21,13 +21,16 @@
 
 <h4>Endpoints Disponíveis</h4>
 <ul>
-<h5><li>Versão 1 da API: http://127.0.0.1:8000/api/v1/</li></h5>
-<ul>
-    <h5><li>http://127.0.0.1:8000/api/v1/address/</li></h5>
-    <h5><li>http://127.0.0.1:8000/api/v1/client/</li></h5>
-    <h5><li>http://127.0.0.1:8000/api/v1/addres/zip/cep</li></h5>
-    <h5><li>http://127.0.0.1:8000/api/v1/client/id/address/</li></h5>
-
+<h5><li>Versão 1 da API, poderá acessar pelo Swagger ou DRF:
+<ul><h5> Swagger:
+<li> http://127.0.0.1:8000/api/schema/swagger-ui/</h5></li> </ul>
+<ul><h5> DRF:
+    <li>http://127.0.0.1:8000/api/v1/</li>
+    <li>http://127.0.0.1:8000/api/v1/address/</li>
+    <li>http://127.0.0.1:8000/api/v1/client/</li>
+    <li>http://127.0.0.1:8000/api/v1/addres/zip/cep</li>
+    <li>http://127.0.0.1:8000/api/v1/client/id/address/</li>
+</h5>
 </ul>
 
 </ul>
