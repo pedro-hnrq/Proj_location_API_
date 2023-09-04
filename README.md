@@ -3,7 +3,8 @@
 <h2 align="center">📷 Prévia <h2>
 
 
-![location](https://github.com/pedro-hnrq/Proj_location_API_/assets/74242717/92c763b5-2f2d-45a8-a43c-9ac32f7bbaba)
+
+![location_2](https://github.com/pedro-hnrq/Proj_location_API_/assets/74242717/33202b5b-d076-4ade-8d0f-8a7e6a78978c)
 
 
 
@@ -23,7 +24,8 @@
 <ul>
 <h5><li>Versão 1 da API, poderá acessar pelo Swagger ou DRF:
 <ul><h5> Swagger:
-<li> http://127.0.0.1:8000/api/schema/swagger-ui/</h5></li> </ul>
+<li> http://127.0.0.1:8000/api/schema/swagger/</li>
+<li> http://127.0.0.1:8000/api/schema/redoc/</li></h5></ul>
 <ul><h5> DRF:
     <li>http://127.0.0.1:8000/api/v1/</li>
     <li>http://127.0.0.1:8000/api/v1/address/</li>
@@ -100,7 +102,7 @@ pip install -r requirements.txt
 execute os comandos abaixo para criar arquivo de variáveis de ambiente a partir de exemplos. (Lembre-se de modificá-los)
 
 ```bash
-cp env .env
+mv env .env
 ```
 #### Execução na máquina
 
