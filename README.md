@@ -10,9 +10,9 @@
 
 <h3>🎯 Objetivo</h3>
 
-<h5 align="justify">Este Projeto Location API, tem como objetivo atender ao um teste, utilizando o Django REST Framework - DRF com o Banco de Dados MonoDB. A API permite o gerenciamento dos registros do Endereço usando ViaCEP e o cadastro dos clientes.</h5>
+<h5 align="justify">O objetivo do Projeto Location API é aprimorar os conhecimentos em Django REST Framework e Swagger, capacitando-se para efetuar requisições e manipular endpoints. Além disso, visa integrar essas habilidades com um banco de dados não relacional, como o MongoDB. Através dessa API, será possível gerenciar registros de endereços utilizando o serviço ViaCEP, bem como cadastrar clientes de forma eficiente.</h5>
 
-<h4>Funcionalidade</h4>
+#### 🗂️ Funcionalidade
 
 <ul>
 <h5 align="justify"><li>Autenticação de usuários: é possível realizar o criação de novo usuário ou gerar um token de autenticação.</li></h5>
@@ -20,7 +20,7 @@
 <h5 align="justify"><li>Leitura de dados: usuários não autenticados têm permissão apenas para leitura de dados, sem a possibilidade de fazer alterações.</li></h5>
 </ul>
 
-<h4>Endpoints Disponíveis</h4>
+#### 🏁 Endpoints Disponíveis
 <ul>
 <h5><li>Versão 1 da API, poderá acessar pelo Swagger ou DRF:
 <ul><h5> Swagger:
@@ -53,11 +53,11 @@
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-- Python (versão 3.10.X)
-- Django (versão 4.1.X)
-- Django REST Framework (versão 3.14.X)
-- Mongo (versão 6.X.X)
-- GIT (versão 2.X.X)
+- Python
+- Django 
+- Django REST Framework 
+- Mongo 
+- GIT
 
 #### 🛠️ Instalação
 
@@ -143,11 +143,11 @@ Gera o Token
 >>> token = Token.objects.create(user=admin)
 >>> token.key
 ```
-#### Realizar Teste
+<!-- #### Realizar Teste
 
 ```python
 python manage.py test
-```
+``` -->
 
 
   
